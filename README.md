@@ -2,11 +2,9 @@
 
 ## Johdanto
 
-Kurssin harjoitustyössä kehitettiin backend viestintäsovellus, jonka pääasiallinen tarkoitus on mahdollistaa käyttäjien välinen viestintä. Sovelluksella voi lähettää julkisia ja sekä yksityisviestejä.
+Kurssin harjoitustyössä kehitettiin C# backend sovellus, jonka pääasiallinen tarkoitus on mahdollistaa käyttäjien välinen viestintä.
 
-## Tietomallit
-
-Sovelluksen keskeiset tietomallit ovat seuraavat:
+## Käytössä olevat Tietomallit
 
 Käyttäjä:
 - Tunnus
@@ -15,22 +13,23 @@ Käyttäjä:
 - Sukunimi
 - Liittymisaika
 - Viimeinen loginaika
-- Käyttäjä ID
+
 
 Viesti:
 - Otsikko
 - Viesti
-- Lähettäjä (viittaus käyttäjän ID:hen)
-- Vastaanottaja (viittaus käyttäjän ID:hen)
+- Lähettäjä 
+- Vastaanottaja
 - Linkki edelliseen viestiin (jos vastaus viestiketjuun)
-- Viesti ID
+
+Kaikilla malleilla on oma ID, jolla ne tunnistetaan ja yhdistetään toisiinsa.
 
 ## Toiminnallisuudet
 
 Sovellus tarjoaa seuraavat päätoiminnallisuudet:
 
-- Viestien Lähettäminen:
-  - Käyttäjät voivat luoda ja lähettää sekä julkisia että yksityisviestejä.
+- Viestit
+  - Käyttäjät voivat luoda ja lähettää sekä julkisia, että yksityisviestejä.
 
 - Viestiketjut:
   - Viestit voivat muodostaa viestiketjuja vastaamalla olemassaoleviin viesteihin.
@@ -53,3 +52,9 @@ Sovellus noudattaa seuraavaa rakennetta:
 
 - RESTful API:
   - Sovellusta voi käyttää esim. Postmanin kautta, jonka avulla käyttäjät voivat suorittaa eri toimintoja.
+ 
+#Lisäominaisuudet
+  - Sovelluksessa ei ole toiminnallisuutta viestien ilmoituksille.
+  - Viesteihin ei voi lisätä tiedostoja.
+  - Sovellus on yksikielinen.
+  - Ei ole tilastoja sovelluksen käytöstä.
