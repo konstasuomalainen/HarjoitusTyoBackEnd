@@ -8,7 +8,7 @@ Kurssin harjoitustyössä kehitettiin backend viestintäsovellus, jonka pääasi
 
 Sovelluksen keskeiset tietomallit ovat seuraavat:
 
-#Käyttäjä:
+Käyttäjä:
 - Tunnus
 - Salasana
 - Etunimi
@@ -17,7 +17,7 @@ Sovelluksen keskeiset tietomallit ovat seuraavat:
 - Viimeinen loginaika
 - Käyttäjä ID
 
-#Viesti:
+Viesti:
 - Otsikko
 - Viesti
 - Lähettäjä (viittaus käyttäjän ID:hen)
@@ -29,27 +29,27 @@ Sovelluksen keskeiset tietomallit ovat seuraavat:
 
 Sovellus tarjoaa seuraavat päätoiminnallisuudet:
 
-- #Viestien Lähettäminen:
+- Viestien Lähettäminen:
   - Käyttäjät voivat luoda ja lähettää sekä julkisia että yksityisviestejä.
 
-- #Viestiketjut:
+- Viestiketjut:
   - Viestit voivat muodostaa viestiketjuja vastaamalla olemassaoleviin viesteihin.
 
-- #Yksityisyys:
+- Yksityisyys:
   - Yksityiset viestit ovat näkyvissä ainoastaan vastaanottajalle ja lähettäjälle.
 
-- #Viestien Muokkaus ja Poisto:
+- Viestien Muokkaus ja Poisto:
   - Käyttäjät voivat muokata ja poistaa omia viestejään.
 
-- #Profiilin Hallinta:
+- Profiilin Hallinta:
   - Käyttäjä voi muokata omaa profiiliaan ja poistaa sen tarvittaessa.
 
 ## Sovelluksen Rakenne ja Rajapinnat
 
 Sovellus noudattaa seuraavaa rakennetta:
 
-- #Käyttöliittymärajapinta (UI):
+- Käyttöliittymärajapinta (UI):
   - Sovellusta voi käyttää esimerkiksi web-käyttöliittymän kautta.
 
-- #RESTful API:
+- RESTful API:
   - Sovellusta voi käyttää esim. Postmanin kautta, jonka avulla käyttäjät voivat suorittaa eri toimintoja.
