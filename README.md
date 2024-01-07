@@ -2,7 +2,7 @@
 
 ## Johdanto
 
-Kurssin harjoitustyössä kehitettiin C# backend sovellus, jonka pääasiallinen tarkoitus on mahdollistaa käyttäjien välinen viestintä.
+Kurssin harjoitustyössä kehitettiin C#-kielellä backend-sovellus, jonka pääasiallinen tarkoitus on mahdollistaa käyttäjien välinen viestintä.
 
 ## Käytössä olevat Tietomallit
 
