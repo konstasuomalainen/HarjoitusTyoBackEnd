@@ -53,7 +53,7 @@ Sovellus noudattaa seuraavaa rakennetta:
 - RESTful API:
   - Sovellusta voi käyttää esim. Postmanin kautta, jonka avulla käyttäjät voivat suorittaa eri toimintoja.
  
-#Lisäominaisuudet
+## Lisäominaisuudet
   - Sovelluksessa ei ole toiminnallisuutta viestien ilmoituksille.
   - Viesteihin ei voi lisätä tiedostoja.
   - Sovellus on yksikielinen.
