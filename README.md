@@ -2,7 +2,7 @@
 
 ## Johdanto
 
-Kurssin harjoitustyössä kehitettiin C#-kielellä backend-sovellus, jonka pääasiallinen tarkoitus on mahdollistaa käyttäjien välinen viestintä.
+Kurssin harjoitustyössä kehitettiin C#-kielellä backend-sovellus, joka käyttää SQL-serveriä databasena. Pääasiallinen tarkoitus on mahdollistaa käyttäjien välinen viestintä.
 
 ## Käytössä olevat Tietomallit
 
@@ -57,4 +57,4 @@ Sovellus noudattaa seuraavaa rakennetta:
   - Sovelluksessa ei ole toiminnallisuutta viestien ilmoituksille.
   - Viesteihin ei voi lisätä tiedostoja.
   - Sovellus on yksikielinen.
-  - Ei ole tilastoja sovelluksen käytöstä.
+  - Tilastoja sovelluksen käytöstä.
