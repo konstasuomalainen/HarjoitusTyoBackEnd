@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authentication;
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
-
+        // Konsta Suomalainen
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddDbContext<MessageServiceContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("MessageServiceDB")));
@@ -62,4 +62,5 @@ using Microsoft.AspNetCore.Authentication;
         app.MapControllers();
 
         app.Run();
+        // Konsta Suomalainen
     }
