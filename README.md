@@ -1,60 +1,59 @@
-# Harjoitustyö Back-End
+# Back-End Project
 
-## Johdanto
+## Introduction
 
-Kurssin harjoitustyössä kehitettiin C#-kielellä backend-sovellus, joka käyttää SQL-serveriä databasena. Pääasiallinen tarkoitus on mahdollistaa käyttäjien välinen viestintä.
+In the course project, a backend application was developed using the C# language, with an SQL server as the database. The main purpose is to enable communication between users.
 
-## Käytössä olevat Tietomallit
+## Data Models in Use
 
-Käyttäjä:
-- Tunnus
-- Salasana
-- Etunimi
-- Sukunimi
-- Liittymisaika
-- Viimeinen loginaika
+User:
+- ID
+- Password
+- First Name
+- Last Name
+- Join Date
+- Last Login Time
 
+Message:
+- Title
+- Message
+- Sender 
+- Receiver
+- Link to the previous message (if it's a reply in a thread)
 
-Viesti:
-- Otsikko
-- Viesti
-- Lähettäjä 
-- Vastaanottaja
-- Linkki edelliseen viestiin (jos vastaus viestiketjuun)
+All models have their own ID, which are used to identify and link them to each other.
 
-Kaikilla malleilla on oma ID, jolla ne tunnistetaan ja yhdistetään toisiinsa.
+## Features
 
-## Toiminnallisuudet
+The application offers the following main features:
 
-Sovellus tarjoaa seuraavat päätoiminnallisuudet:
+- Messages:
+  - Users can create and send both public and private messages.
 
-- Viestit
-  - Käyttäjät voivat luoda ja lähettää sekä julkisia, että yksityisviestejä.
+- Message Threads:
+  - Messages can form threads by replying to existing messages.
 
-- Viestiketjut:
-  - Viestit voivat muodostaa viestiketjuja vastaamalla olemassaoleviin viesteihin.
+- Privacy:
+  - Private messages are only visible to the receiver and the sender.
 
-- Yksityisyys:
-  - Yksityiset viestit ovat näkyvissä ainoastaan vastaanottajalle ja lähettäjälle.
+- Message Editing and Deletion:
+  - Users can edit and delete their own messages.
 
-- Viestien Muokkaus ja Poisto:
-  - Käyttäjät voivat muokata ja poistaa omia viestejään.
+- Profile Management:
+  - Users can edit their own profile and delete it if necessary.
 
-- Profiilin Hallinta:
-  - Käyttäjä voi muokata omaa profiiliaan ja poistaa sen tarvittaessa.
+## Application Structure and Interfaces
 
-## Sovelluksen Rakenne ja Rajapinnat
+The application follows the following structure:
 
-Sovellus noudattaa seuraavaa rakennetta:
-
-- Käyttöliittymärajapinta (UI):
-  - Sovellusta voi käyttää esimerkiksi web-käyttöliittymän kautta.
+- User Interface (UI):
+  - The application can be accessed through a web interface.
 
 - RESTful API:
-  - Sovellusta voi käyttää esim. Postmanin kautta, jonka avulla käyttäjät voivat suorittaa eri toimintoja.
+  - The application can be used via tools like Postman, allowing users to perform various actions.
  
-## Lisäominaisuudet
-  - Sovelluksessa ei ole toiminnallisuutta viestien ilmoituksille.
-  - Viesteihin ei voi lisätä tiedostoja.
-  - Sovellus on yksikielinen.
-  - Tilastoja sovelluksen käytöstä.
+## Additional Features
+  - The application does not have functionality for message notifications.
+  - Files cannot be attached to messages.
+  - The application is monolingual.
+  - Statistics on application usage.
